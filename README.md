@@ -9,7 +9,8 @@
 
 • Filter through data/images using the javascript filter array method.
 
-demo : food-app-blue.vercel.app
+demo : https://food-app-blue.vercel.app/
+
 
 
 
