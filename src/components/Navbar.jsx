@@ -39,7 +39,7 @@ const Navbar = () => {
       </div>
 
       {/* Cart button */}
-      <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full">
+      <button className="bg-cyan-800 text-white hidden md:flex items-center py-2 rounded-full">
         <BsFillCartFill size={20} className="mr-2" /> Cart
       </button>
 
