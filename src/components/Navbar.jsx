@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   AiOutlineMenu,
   AiOutlineSearch,
@@ -12,6 +12,22 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setNav(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
   return (
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
       {/* Left side */}
@@ -53,6 +69,7 @@ const Navbar = () => {
 
       {/* Side drawer menu */}
       <div
+        ref={menuRef}
         className={
           nav
             ? "fixed top-0 left-0 w-[300px] h-screen bg-white z-10 duration-300"
