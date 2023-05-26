@@ -1,6 +1,6 @@
 # Food App
 
-Food App is a single-page web application built with React.js, JavaScript, and Tailwind CSS. It was my first project after learning the basics of JavaScript and React.js. The app allows users to explore different types of food and filter them based on categories and price ranges.
+Food App is a single-page web application built with React.js and Tailwind CSS. It was my first project after learning the basics of JavaScript and React.js. The app allows users to explore different types of food and filter them based on categories and price ranges.
 
 ## Features
 
@@ -11,7 +11,6 @@ Food App is a single-page web application built with React.js, JavaScript, and T
 ## Technologies Used
 
 - React.js
-- JavaScript
 - Tailwind CSS
 
 ## Getting Started
